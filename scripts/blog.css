@@ -1,0 +1,410 @@
+/* ============================================
+   CSS VARIABLES - Blog Page
+   Fonte escolhida: Poppins (Google Fonts)
+   Razão: Sans-serif moderna, legível, com múltiplos pesos
+   ============================================ */
+:root {
+    /* Cores principais extraídas da imagem de referência */
+    --dark-bar: #3a3a3a;
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --text-dark: #202020;
+    --text-muted: #6b6b6b;
+    --text-light-gray: #999999;
+    --accent-green: #63e2b4;
+    --accent-green-dark: #01d6a1;
+    --border-light: #e0e0e0;
+    
+    /* Espaçamentos */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 60px;
+    --space-xxl: 100px;
+    
+    /* Tipografia */
+    --font-base: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-base);
+    padding-top: 150px;
+    overflow-x: hidden;
+    background: var(--bg-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ============================================
+   HEADER STYLES - NÃO ALTERAR MARKUP
+   Estilos mantidos do original com Poppins
+   ============================================ */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header::after {
+    content: "";
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0));
+    pointer-events: none;
+    z-index: 998;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-bar);
+    padding: 13px 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.top-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.top-right a {
+    margin-left: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.top-right a:hover {
+    color: var(--accent-green);
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: var(--bg-white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #575757;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.menu a.active {
+    color: #000000;
+}
+
+.menu a:hover {
+    color: var(--accent-green);
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.purchase-btn {
+    padding: 10px 40px;
+    border: none;
+    background: linear-gradient(90deg, #97ff5a, var(--accent-green-dark));
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 255, 150, 0.3);
+    height: 50px;
+    transition: box-shadow 0.3s ease;
+}
+
+.purchase-btn:hover {
+    box-shadow: 0 7px 25px rgba(0, 255, 150, 0.4);
+}
+
+.search-icon {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: var(--accent-green);
+}
+
+/* ============================================
+   BLOG PAGE MAIN CONTENT
+   ============================================ */
+
+/* Blog Hero Section - Título centralizado */
+.blog-hero {
+    background: var(--bg-white);
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--accent-green);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Blog Posts Section */
+.blog-posts-section {
+    background: var(--bg-light);
+    padding: var(--space-xxl) var(--space-md);
+    min-height: 100vh;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 20px;
+}
+
+/* ============================================
+   POST CARD STYLES
+   Sombras extraídas: box-shadow: 0 12px 30px rgba(27, 34, 63, 0.08)
+   Border-radius: 8px para imagens
+   ============================================ */
+.post-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+
+/* Post Image Wrapper */
+.post-image-wrapper {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0;
+    position: relative;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Post Content Card - Cartão branco sobreposto */
+.post-content-card {
+    background: var(--bg-white);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin: -40px 24px 0 24px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 12px 30px rgba(27, 34, 63, 0.08);
+}
+
+
+
+/* Post Meta - Data e autor */
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-light-gray);
+}
+
+.post-date,
+.post-author {
+    color: var(--text-light-gray);
+}
+
+.meta-separator {
+    color: var(--text-light-gray);
+    font-weight: 300;
+}
+
+/* Post Title com bullet verde */
+.post-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.post-card:hover .post-title {
+    color: var(--accent-green-dark);
+}
+
+/* Green Bullet - Círculo verde decorativo */
+.title-bullet {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+/* ============================================
+   FOOTER STYLES - NÃO ALTERAR MARKUP
+   Mantido idêntico ao original
+   ============================================ */
+footer {
+    color: black;
+    padding: 80px 50px 30px;
+    background: var(--bg-white);
+}
+
+.barra-footer {
+    width: 60px; 
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.barra-footer img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-column h4 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #444444;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 2px;
+    color: #444444;
+}
+
+.footer-column ul li a {
+    color: #444444;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--accent-green);
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    background-color: var(--text-dark);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    width: 100%;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    background: #2a2a2a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--accent-green);
+}
+
+
+
+
