@@ -605,9 +605,16 @@ footer {
     color: #5CE1C1;
 }
 
-.map-container iframe {
-    border: 0;
-    border-radius: 8px;
+.map-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.map-container img {
+    width: 110%;
+    height: auto;
+    object-fit: cover;
 }
 
 .footer-bottom {
