@@ -18,6 +18,7 @@ body {
 }
 
 
+
 /* =HEADER STYLES= */
 header {
     width: 100%;
@@ -38,6 +39,10 @@ header::after {
     pointer-events: none;
     z-index: 998;
 }
+
+
+
+
 
 /* Top Bar */
 .top-bar {
@@ -69,6 +74,10 @@ header::after {
     color: #63e2b4;
 }
 
+
+
+
+
 /* Main Header */
 .main-header {
     display: flex;
@@ -82,6 +91,10 @@ header::after {
 .logo img {
     height: 40px;
 }
+
+
+
+
 
 /* Navigation Menu */
 .menu {
@@ -105,6 +118,10 @@ header::after {
 .menu a:hover {
     color: #63e2b4;
 }
+
+
+
+
 
 /* Header Actions */
 .header-actions {
@@ -142,9 +159,12 @@ header::after {
     color: #63e2b4;
 }
 
-/* BLOG PAGE MAIN CONTENT */
 
-/* Blog Hero Section - Título centralizado */
+
+
+
+
+/* BLOG PAGE MAIN CONTENT */
 .blog-hero {
     background: #ffffff;
     padding: 60px 24px;
@@ -158,6 +178,10 @@ header::after {
     letter-spacing: 1px;
     margin: 0;
 }
+
+
+
+
 
 /* Blog Posts Section */
 .blog-posts-section {
@@ -175,6 +199,10 @@ header::after {
     padding: 0 20px;
 }
 
+
+
+
+
 /* POST CARD STYLES */
 .post-card {
     position: relative;
@@ -184,7 +212,6 @@ header::after {
 }
 
 
-/* Post Image Wrapper */
 .post-image-wrapper {
     width: 100%;
     height: 320px;
@@ -201,7 +228,6 @@ header::after {
     display: block;
 }
 
-
 /* Post Content Card - Cartão branco sobreposto */
 .post-content-card {
     background: #ffffff;
@@ -214,8 +240,6 @@ header::after {
 }
 
 
-
-/* Post Meta - Data e autor */
 .post-meta {
     display: flex;
     align-items: center;
@@ -238,7 +262,7 @@ header::after {
     font-weight: 300;
 }
 
-/* Post Title com bullet verde */
+
 .post-title {
     font-size: 18px;
     font-weight: 600;
@@ -255,6 +279,8 @@ header::after {
     color: #01d6a1;
 }
 
+
+
 /* Green Bullet - Círculo verde decorativo */
 title-bullet {
     width: 8px;
@@ -264,6 +290,11 @@ title-bullet {
     flex-shrink: 0;
     margin-top: 6px;
 }
+
+
+
+
+
 
 /* FOOTER STYLES */
 footer {

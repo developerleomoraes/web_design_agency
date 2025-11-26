@@ -140,11 +140,15 @@ header::after {
 
 
 
+
+
 /* SHOWCASE MAIN CONTENT */
 .showcase-main {
     background: #ffffff;
     padding: 240px 0 100px;
 }
+
+
 
 
 
@@ -186,6 +190,9 @@ header::after {
     color: #575757;
     text-align: justify;
 }
+
+
+
 
 
 
@@ -261,6 +268,7 @@ header::after {
 
 
 
+
 /* Grid Layout - Masonry Style */
 .gallery-grid {
     display: grid;
@@ -306,6 +314,9 @@ header::after {
 .gallery-item:nth-child(6) {
     grid-row: span 2;
 } 
+
+
+
 
 
 

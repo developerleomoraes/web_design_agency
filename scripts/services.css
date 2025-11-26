@@ -595,32 +595,6 @@ footer {
     background: #5CE1C1;
 }
 
-/* ==========================================
-   FLOATING CHAT BUTTON
-   ========================================== */
-.floating-chat {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: #4A90E2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 28px;
-    box-shadow: 0 5px 20px rgba(74, 144, 226, 0.4);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.floating-chat:hover {
-    transform: scale(1.1);
-    box-shadow: 0 7px 25px rgba(74, 144, 226, 0.5);
-}
 
 
 

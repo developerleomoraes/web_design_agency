@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
 }
 
+
+
+
+
 /* Header Styles */
 header {
     width: 100%;
@@ -35,6 +39,11 @@ header::after {
     pointer-events: none;
     z-index: 998;
 }
+
+
+
+
+
 
 /* Top Bar */
 .top-bar {
@@ -66,6 +75,11 @@ header::after {
     color: #00d9a6;
 }
 
+
+
+
+
+
 /* Main Header */
 .main-header {
     display: flex;
@@ -79,6 +93,10 @@ header::after {
 .logo img {
     height: 40px;
 }
+
+
+
+
 
 /* Navigation Menu */
 .menu {
@@ -102,6 +120,9 @@ header::after {
 .menu a:hover {
     color: #00d9a6;
 }
+
+
+
 
 /* Header Actions */
 .header-actions {
@@ -139,7 +160,12 @@ header::after {
     color: #00d9a6;
 }
 
-/* Hero Section (Agency Section) */
+
+
+
+
+
+/* Hero Section Agency Section */
 .agency-section {
     display: flex;
     justify-content: space-between;
@@ -211,6 +237,10 @@ header::after {
     background: #00d9a6;
 }
 
+
+
+
+
 /* Hero Image */
 .agency-image {
     margin-right: -200px;
@@ -256,6 +286,10 @@ header::after {
     color: #00d9a6;
 }
 
+
+
+
+
 /* Carousel Navigation */
 .agency-carousel-nav {
     position: absolute;
@@ -287,6 +321,11 @@ header::after {
     background-color: #00d9a6;
     color: #fff;
 }
+
+
+
+
+
 
 /* Services Section */
 .services-section {
@@ -381,6 +420,12 @@ header::after {
     color: #fff;
 }
 
+
+
+
+
+
+
 /* About Section */
 .about-section {
     display: grid;
@@ -438,6 +483,11 @@ header::after {
     border-radius: 20px;
     z-index: 1;
 }
+
+
+
+
+
 
 
 /* Portfolio Section */
@@ -507,6 +557,8 @@ header::after {
     background: #2b2b2b;
     color: #fff;
 }
+
+
 
 
 
@@ -672,6 +724,10 @@ header::after {
 
 
 
+
+
+
+
 /* Pricing Section */
 .pricing-wrapper {
     display: flex;
@@ -778,6 +834,11 @@ header::after {
 }
 
 
+
+
+
+
+
 /* Testimonial Section */
 .testimonial-section {
     position: relative;
@@ -850,6 +911,10 @@ header::after {
 }
 
 
+
+
+
+
 /* Blog Section */
 .blog-section {
     padding: 100px 50px;
@@ -875,9 +940,13 @@ header::after {
     margin: 0 auto 30px;
 }
 
-/* ============================================
-   BLOG CARD STYLES - Baseado no Post Card
-   ============================================ */
+
+
+
+
+
+
+/* BLOG CARD STYLES */
 .blog-card {
     position: relative;
     display: flex;
@@ -953,7 +1022,7 @@ header::after {
     color: #00b37e;
 }
 
-/* Green Bullet - Círculo verde decorativo */
+
 .title-bullet {
     width: 8px;
     height: 8px;
@@ -963,7 +1032,7 @@ header::after {
     margin-top: 6px;
 }
 
-/* Botão VIEW ALL */
+
 .blog-btn-center {
     display: block;
     width: 150px;
@@ -986,7 +1055,12 @@ header::after {
     color: #fff;
 }
 
-/* Portfolio Header (mantido do código original) */
+
+
+
+
+
+/* Portfolio Header */
 .portfolio-header {
     display: flex;
     align-items: flex-start;
@@ -1039,17 +1113,17 @@ header::after {
     align-items: center;
 }
 
-/* Bloco escuro */
+
 .dark-box {
     background: linear-gradient(135deg, #444444, #000);
 }
 
-/* Bloco verde */
+
 .green-box {
     background: linear-gradient(90deg, #01d6a1, #97ff5a);
 }
 
-/* Títulos */
+
 .cta-box h2 {
     font-size: 39px;
     font-weight: 700;
@@ -1081,6 +1155,11 @@ header::after {
     box-shadow: 0 6px 20px #97ff5a;
 }
 
+
+
+
+
+
 /* Clients Section */
 .clients-section {
     display: flex;
@@ -1103,6 +1182,10 @@ header::after {
     transition: opacity 0.3s ease;
     filter: grayscale(100%); 
 }
+
+
+
+
 
 
 

@@ -15,6 +15,9 @@ body {
     line-height: 1.6;
 }
 
+
+
+
 /* Header Styles */
 header {
     width: 100%;
@@ -35,6 +38,9 @@ header::after {
     pointer-events: none;
     z-index: 998;
 }
+
+
+
 
 /* Top Bar */
 .top-bar {
@@ -65,6 +71,9 @@ header::after {
     color: #00d9a6;
 }
 
+
+
+
 /* Main Header */
 .main-header {
     display: flex;
@@ -78,6 +87,10 @@ header::after {
 .logo img {
     height: 40px;
 }
+
+
+
+
 
 /* Navigation Menu */
 .menu {
@@ -100,6 +113,9 @@ header::after {
 .menu a:hover {
     color: #00d9a6;
 }
+
+
+
 
 /* Header Actions */
 .header-actions {
@@ -135,6 +151,8 @@ header::after {
     color: #00d9a6;
 }
 
+
+
 /* PAGE TITLE SECTION */
 .page-title-section {
     background: #f8f8f8;
@@ -147,6 +165,9 @@ header::after {
     font-weight: 700;
     color: #00d9a6;
 }
+
+
+
 
 /* CREATIVE AGENCY SECTION */
 .creative-section {
@@ -196,6 +217,9 @@ header::after {
     width: 100%;
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
+
+
+
 
 /* OUR VISIONS SECTION */
 .visions-section {
@@ -256,6 +280,10 @@ header::after {
     line-height: 1.6;
     opacity: 0.9;
 }
+
+
+
+
 
 /* TEAM SECTION */
 .team-section {
@@ -365,6 +393,10 @@ header::after {
     box-shadow: 0 15px 40px rgba(0, 255, 150, 0.5);
 }
 
+
+
+
+
 /* CTA CARDS SECTION */
 .cta-cards-section {
     padding: 80px 50px;
@@ -424,6 +456,9 @@ header::after {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+
+
+
 /* CLIENTS LOGOS SECTION */
 .clients-logos-section {
     padding: 80px 50px;
@@ -451,6 +486,10 @@ header::after {
     opacity: 0.8;
     filter: grayscale(0%);
 }
+
+
+
+
 
 /* Footer */
 footer {

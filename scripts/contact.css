@@ -276,7 +276,7 @@ header::after {
     align-items: start;
 }
 
-/* Form Text */
+
 .contact-form-text__heading {
     font-size: clamp(36px, 4vw, 52px);
     font-weight: 600;
@@ -302,7 +302,7 @@ header::after {
     line-height: 1.8;
 }
 
-/* Form Wrapper */
+
 .contact-form-wrapper {
     background: #ffffff;
     position: relative;
@@ -461,6 +461,10 @@ header::after {
     box-shadow: 0 8px 25px rgba(151, 255, 90, 0.4);
 }
 
+
+
+
+
 /* Clients Section */
 .clients-section {
     display: flex;
@@ -494,7 +498,7 @@ header::after {
 
 
 
-/* FOOTER STYLES (from home) */
+/* FOOTER STYLES */
 
 footer {
     color: #202020;
