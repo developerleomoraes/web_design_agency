@@ -1,8 +1,4 @@
-/* ============================================
-   CSS VARIABLES - Blog Page
-   Fonte escolhida: Poppins (Google Fonts)
-   Razão: Sans-serif moderna, legível, com múltiplos pesos
-   ============================================ */
+/* CSS VARIABLES - Blog Page */
 :root {
     /* Cores principais extraídas da imagem de referência */
     --dark-bar: #3a3a3a;
@@ -28,9 +24,7 @@
     --font-heading: 'Poppins', sans-serif;
 }
 
-/* ============================================
-   RESET & BASE STYLES
-   ============================================ */
+/* RESET & BASE STYLE */
 * {
     margin: 0;
     padding: 0;
@@ -46,10 +40,8 @@ body {
     line-height: 1.6;
 }
 
-/* ============================================
-   HEADER STYLES - NÃO ALTERAR MARKUP
-   Estilos mantidos do original com Poppins
-   ============================================ */
+
+/* =HEADER STYLES= */
 header {
     width: 100%;
     position: fixed;
@@ -173,9 +165,7 @@ header::after {
     color: var(--accent-green);
 }
 
-/* ============================================
-   BLOG PAGE MAIN CONTENT
-   ============================================ */
+/* BLOG PAGE MAIN CONTENT */
 
 /* Blog Hero Section - Título centralizado */
 .blog-hero {
@@ -208,11 +198,7 @@ header::after {
     padding: 0 20px;
 }
 
-/* ============================================
-   POST CARD STYLES
-   Sombras extraídas: box-shadow: 0 12px 30px rgba(27, 34, 63, 0.08)
-   Border-radius: 8px para imagens
-   ============================================ */
+/* POST CARD STYLES */
 .post-card {
     position: relative;
     display: flex;
@@ -302,10 +288,7 @@ header::after {
     margin-top: 6px;
 }
 
-/* ============================================
-   FOOTER STYLES - NÃO ALTERAR MARKUP
-   Mantido idêntico ao original
-   ============================================ */
+/* FOOTER STYLES */
 footer {
     color: black;
     padding: 80px 50px 30px;

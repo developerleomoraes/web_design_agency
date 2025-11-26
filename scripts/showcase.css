@@ -1,6 +1,4 @@
-/* ============================================
-   CSS VARIABLES
-   ============================================ */
+/* CSS VARIABLES */
 :root {
     --dark: #2e2e2e;
     --muted: #6b6b6b;
@@ -12,9 +10,7 @@
     --border-light: #e0e0e0;
 }
 
-/* ============================================
-   GOOGLE FONTS & RESET
-   ============================================ */
+/* GOOGLE FONTS & RESET*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -35,9 +31,7 @@ body {
 
 
 
-/* ============================================
-   HEADER STYLES (mantido idêntico)
-   ============================================ */
+/* HEADER STYLES */
 header {
     width: 100%;
     position: fixed;
@@ -159,9 +153,7 @@ header::after {
 
 
 
-/* ============================================
-   SHOWCASE MAIN CONTENT
-   ============================================ */
+/* SHOWCASE MAIN CONTENT */
 .showcase-main {
     background: #ffffff;
     padding: 240px 0 100px;
@@ -169,9 +161,7 @@ header::after {
 
 
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
+/* HERO SECTION */
 .showcase-hero {
     max-width: 1200px;
     margin: 0 auto;
@@ -312,12 +302,12 @@ header::after {
     display: block;
 }
 
-/* Tall items (span 2 rows) */
+
 .gallery-item.item-tall {
     grid-row: span 2;
 }
 
-/* Specific grid positioning for masonry effect */
+
 .gallery-item:nth-child(1) {
     grid-row: span 2;
 }
@@ -334,9 +324,7 @@ header::after {
 
 
 
-/* ============================================
-   FOOTER STYLES (mantido idêntico)
-   ============================================ */
+/* FOOTER STYLES */
 footer {
     color: black;
     padding: 80px 50px 30px;
