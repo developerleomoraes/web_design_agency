@@ -140,13 +140,13 @@ header::after {
 /* PAGE TITLE SECTION */
 .page-title-section {
     background: #f8f8f8;
-    padding: 80px 50px;
+    padding: 50px 50px;
     text-align: center;
 }
 
 .page-title-section h1 {
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 700;
     color: #00d9a6;
 }
 
@@ -155,7 +155,7 @@ header::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding: 100px 50px;
+    padding: 220px 50px;
     background: #fff;
     align-items: center;
 }
@@ -201,8 +201,8 @@ header::after {
 
 /* OUR VISIONS SECTION */
 .visions-section {
-    background: linear-gradient(135deg, #00d9a6, #00e291);
-    padding: 100px 50px;
+    background: linear-gradient(200deg, #afff64, #00e291);
+    padding: 220px 50px;
     text-align: center;
     color: #fff;
 }
@@ -261,21 +261,22 @@ header::after {
 
 /* TEAM SECTION */
 .team-section {
-    padding: 100px 50px;
+    margin-top: 100px;
+    padding: 100px 30px;
     background: #fff;
     text-align: center;
 }
 
 .team-section h2 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 55px;
+    font-weight: 550;
     color: #202020;
     margin-bottom: 10px;
 }
 
 .team-section h3 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 55px;
+    font-weight: 550;
     margin-bottom: 20px;
 }
 
@@ -286,14 +287,15 @@ header::after {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 60px auto 0;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* gap: 10px; */
+    max-width: 1300px;
+    margin: 10px auto 0;
 }
 
 .team-member {
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .team-member img {
@@ -306,13 +308,16 @@ header::after {
 
 /* QUESTIONS SECTION */
 .questions-section {
-    background: linear-gradient(135deg, #2a2a2a, #000);
-    padding: 120px 50px;
+    padding: 220px 50px;
     text-align: center;
     color: #fff;
     position: relative;
+    background: url('../assets/redd-francisco-5U_28ojjgms-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden; 
 }
 
+/* Camada preta transparente por cima */
 .questions-section::before {
     content: "";
     position: absolute;
@@ -320,8 +325,14 @@ header::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(0, 217, 166, 0.1), transparent 70%);
+    background: rgba(0, 0, 0, 0.8); 
     pointer-events: none;
+    z-index: 1;
+}
+
+.questions-section > * {
+    position: relative;
+    z-index: 2;
 }
 
 .questions-section h2 {
