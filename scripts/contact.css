@@ -1,7 +1,5 @@
 
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
 /* Reset */
@@ -151,16 +149,18 @@ header::after {
 /* HERO / TITLE SECTION */
 
 .contact-hero {
-    padding: 80px 50px 60px;
+    padding: 120px 50px 60px;
     background: #ffffff;
     text-align: center;
+    background-color: #f7f7f7;
 }
 
 .contact-hero__title {
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: 600;
-    color: #5CE1C1;
+    font-size: 43px;
+    font-weight: 700;
+    color: #52ddbd;
     letter-spacing: 1px;
+    margin-top: -80px;
 }
 
 
@@ -169,7 +169,6 @@ header::after {
 
 
 /* MAP SECTION WITH CONTACT CARDS */
-
 .contact-map-section {
     position: relative;
     width: 100%;
@@ -181,75 +180,23 @@ header::after {
     width: 100%;
     height: 500px;
     background: #2b2b2b;
-    background-image: 
-        repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 36px),
-        repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 36px);
+    background-image: url('../assets/new_york_map_contact_page.png');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
 }
 
-.map-controls {
+.contact-map::before {
+    content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
-}
-
-.map-controls__zoom {
-    background: #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    margin-bottom: 10px;
-}
-
-.map-controls__btn {
-    width: 35px;
-    height: 35px;
-    border: none;
-    background: #ffffff;
-    color: #202020;
-    font-size: 20px;
-    font-weight: 300;
-    cursor: pointer;
-    display: block;
-    transition: all 0.3s ease;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.map-controls__btn:last-child {
-    border-bottom: none;
-}
-
-.map-controls__btn:hover {
-    background: #f3f3f3;
-}
-
-.map-controls__view {
-    display: flex;
-    background: #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.map-controls__tab {
-    padding: 8px 16px;
-    border: none;
-    background: #ffffff;
-    color: #202020;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.map-controls__tab--active {
-    background: #f3f3f3;
-}
-
-.map-controls__tab:hover {
-    background: #f3f3f3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    pointer-events: none; 
 }
 
 .map-marker {
@@ -259,6 +206,7 @@ header::after {
     transform: translate(-50%, -50%);
     animation: pulse 2s infinite;
 }
+
 
 
 
