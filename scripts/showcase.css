@@ -1,16 +1,6 @@
-/* CSS VARIABLES */
-:root {
-    --dark: #2e2e2e;
-    --muted: #6b6b6b;
-    --accent: #63e2b4;
-    --accent-dark: #36c89a;
-    --bg: #ffffff;
-    --text-dark: #202020;
-    --text-light: #575757;
-    --border-light: #e0e0e0;
-}
 
-/* GOOGLE FONTS & RESET*/
+
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -23,8 +13,8 @@
 body {
     padding: 150px 0 0 0;
     overflow-x: hidden;
-    background: var(--bg);
-    color: var(--text-dark);
+    background: #ffffff;
+    color: #202020;
     line-height: 1.6;
 }
 
@@ -180,12 +170,12 @@ header::after {
     font-size: 48px;
     font-weight: 500;
     line-height: 1.3;
-    color: var(--text-dark);
+    color: #202020;
     margin-bottom: 30px;
 }
 
 .hero-text h1 .highlight {
-    color: var(--accent);
+    color: #63e2b4;
     font-weight: 400;
 }
 
@@ -196,7 +186,7 @@ header::after {
 .hero-description p {
     font-size: 14px;
     line-height: 1.8;
-    color: var(--text-light);
+    color: #575757;
     text-align: justify;
 }
 
@@ -422,7 +412,3 @@ footer {
 .social-links a:hover {
     background: #00d9a6;
 }
-
-
-
-

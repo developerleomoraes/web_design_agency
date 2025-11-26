@@ -482,7 +482,7 @@ header::after {
 }
 
 .portfolio-item:hover {
-    transform: none; /* removido efeito de escala */
+    transform: none;
 }
 
 .portfolio-item img {
@@ -571,6 +571,8 @@ header::after {
     opacity: 0.95;
 }
 
+
+
 /* Grid com as duas estatísticas inferiores */
 .stats-grid {
     display: grid;
@@ -594,6 +596,8 @@ header::after {
     opacity: 0.9;
     line-height: 1.4;
 }
+
+
 
 /* Card Branco Sobreposto */
 .stats-content-card {
@@ -625,6 +629,7 @@ header::after {
     color: #00e291;
 }
 
+
 /* Divider verde abaixo do título */
 .stats-divider {
     width: 60px;
@@ -640,6 +645,8 @@ header::after {
     margin-bottom: 25px;
     text-align: justify;
 }
+
+
 
 /* Lista com checkmarks verdes */
 .stats-list {

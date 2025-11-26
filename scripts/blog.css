@@ -1,28 +1,7 @@
-/* CSS VARIABLES - Blog Page */
-:root {
-    /* Cores principais extraídas da imagem de referência */
-    --dark-bar: #3a3a3a;
-    --bg-white: #ffffff;
-    --bg-light: #f8f9fa;
-    --text-dark: #202020;
-    --text-muted: #6b6b6b;
-    --text-light-gray: #999999;
-    --accent-green: #63e2b4;
-    --accent-green-dark: #01d6a1;
-    --border-light: #e0e0e0;
-    
-    /* Espaçamentos */
-    --space-xs: 8px;
-    --space-sm: 16px;
-    --space-md: 24px;
-    --space-lg: 40px;
-    --space-xl: 60px;
-    --space-xxl: 100px;
-    
-    /* Tipografia */
-    --font-base: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --font-heading: 'Poppins', sans-serif;
-}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 /* RESET & BASE STYLE */
 * {
@@ -32,11 +11,11 @@
 }
 
 body {
-    font-family: var(--font-base);
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     padding-top: 150px;
     overflow-x: hidden;
-    background: var(--bg-white);
-    color: var(--text-dark);
+    background: #ffffff;
+    color: #202020;
     line-height: 1.6;
 }
 
@@ -67,7 +46,7 @@ header::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--dark-bar);
+    background: #3a3a3a;
     padding: 13px 50px;
     color: #fff;
     font-size: 14px;
@@ -89,7 +68,7 @@ header::after {
 }
 
 .top-right a:hover {
-    color: var(--accent-green);
+    color: #63e2b4;
 }
 
 /* Main Header */
@@ -98,7 +77,7 @@ header::after {
     justify-content: space-between;
     align-items: center;
     padding: 25px 50px;
-    background: var(--bg-white);
+    background: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -126,7 +105,7 @@ header::after {
 }
 
 .menu a:hover {
-    color: var(--accent-green);
+    color: #63e2b4;
 }
 
 /* Header Actions */
@@ -139,7 +118,7 @@ header::after {
 .purchase-btn {
     padding: 10px 40px;
     border: none;
-    background: linear-gradient(90deg, #97ff5a, var(--accent-green-dark));
+    background: linear-gradient(90deg, #97ff5a, #01d6a1);
     color: #fff;
     border-radius: 30px;
     font-size: 12px;
@@ -162,30 +141,30 @@ header::after {
 }
 
 .search-icon:hover {
-    color: var(--accent-green);
+    color: #63e2b4;
 }
 
 /* BLOG PAGE MAIN CONTENT */
 
 /* Blog Hero Section - Título centralizado */
 .blog-hero {
-    background: var(--bg-white);
-    padding: var(--space-xl) var(--space-md);
+    background: #ffffff;
+    padding: 60px 24px;
     text-align: center;
 }
 
 .blog-title {
     font-size: 48px;
     font-weight: 400;
-    color: var(--accent-green);
+    color: #63e2b4;
     letter-spacing: 1px;
     margin: 0;
 }
 
 /* Blog Posts Section */
 .blog-posts-section {
-    background: var(--bg-light);
-    padding: var(--space-xxl) var(--space-md);
+    background: #f8f9fa;
+    padding: 100px 24px;
     min-height: 100vh;
 }
 
@@ -227,7 +206,7 @@ header::after {
 
 /* Post Content Card - Cartão branco sobreposto */
 .post-content-card {
-    background: var(--bg-white);
+    background: #ffffff;
     border-radius: 8px;
     padding: 28px 32px;
     margin: -40px 24px 0 24px;
@@ -248,16 +227,16 @@ header::after {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: var(--text-light-gray);
+    color: #999999;
 }
 
 .post-date,
 .post-author {
-    color: var(--text-light-gray);
+    color: #999999;
 }
 
 .meta-separator {
-    color: var(--text-light-gray);
+    color: #999999;
     font-weight: 300;
 }
 
@@ -266,7 +245,7 @@ header::after {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
-    color: var(--text-dark);
+    color: #202020;
     margin: 0;
     display: flex;
     align-items: flex-start;
@@ -275,14 +254,14 @@ header::after {
 }
 
 .post-card:hover .post-title {
-    color: var(--accent-green-dark);
+    color: #01d6a1;
 }
 
 /* Green Bullet - Círculo verde decorativo */
-.title-bullet {
+title-bullet {
     width: 8px;
     height: 8px;
-    background: var(--accent-green);
+    background: #63e2b4;
     border-radius: 50%;
     flex-shrink: 0;
     margin-top: 6px;
@@ -292,7 +271,7 @@ header::after {
 footer {
     color: black;
     padding: 80px 50px 30px;
-    background: var(--bg-white);
+    background: #ffffff;
 }
 
 .barra-footer {
@@ -344,7 +323,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: var(--accent-green);
+    color: #63e2b4;
 }
 
 .map-container iframe {
@@ -352,7 +331,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: var(--text-dark);
+    background-color: #202020;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -385,9 +364,6 @@ footer {
 }
 
 .social-links a:hover {
-    background: var(--accent-green);
+    background: #63e2b4;
 }
-
-
-
 
